@@ -28,13 +28,22 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div>
+        <nav style={{backgroundColor:"#133238",
+         
+          color : "white",
+          padding: "1rem",
+          display:"flex",
+          justifyContent:"center",
+          gap:"12rem",
+          fontSize:"1.125rem",
+
+        }}>
           {" "}
          <Link href="/"> Home </Link>
          <Link href="/about"> about </Link>
          <Link href="/contact"> contact </Link>
          <Link href="/users"> Users </Link>
-        </div>
+       </nav>
         {children}
         
       </body>  
